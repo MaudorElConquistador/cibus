@@ -1,115 +1,61 @@
-html{
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
-  overflow-y: hidden;
+/* Estilos todo el documento */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fira Code','Righteous', sans-serif;
 }
-body{
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-}
+
+/* Estilos del Header */
+
 header{
-  padding: 0.5%;
   width: 100%;
-  height: 6%;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 5% 1% 5%;
   background: #ED2500;
-  display: flex;
-  flex-direction: row;
-  font-family: 'Righteous', sans-serif;
-  align-items: center;
   color: white;
-  -webkit-box-shadow: 0px 6px 21px -4px rgba(0,0,0,0.59);
--moz-box-shadow: 0px 6px 21px -4px rgba(0,0,0,0.59);
-box-shadow: 0px 6px 21px -4px rgba(0,0,0,0.59);
+  font-size: 1.01rem;
 }
-.title{
-  display: flex;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  width: 50%;
-  margin: 0 auto;
+.title img{
+  width: 10%;
 }
-.secion{
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  width: 50%;
-  margin: 0 auto;
-  margin-top: 1rem;
-}
-input{
-  font-family: 'Righteous', sans-serif;
-}
-.botonSecion{
+
+/* Estilos Boton Landing Page */
+
+.botonSesion{
   border-radius: 0.2rem;
-  padding: 0.5%;
   background: #83BA13;
   border: none;
   color: white;
-  font-family: 'Righteous', sans-serif;
+  padding: 3px;
+  font-size: 1.01rem;
 }
-.botonSecion:active{
+.botonSesion:active{
   background: white;
   color: green;
 }
-.botonSecion:hover{
+.botonSesion:hover{
   background: #A7ED18;
 }
 
-section{
-  width: 70%;
-  height: 100%;
-  font-family: 'Comfortaa', sans-serif;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  display: flex;
-  flex-direction: column;
-}
+/* Estilos Contenido Principal Landing Page */
+
+/* .contenido{
+
+} */
+
+/* Estilos Footer */
+
 footer{
+  width: 100%;
+  padding: 1% 5% 1% 5%;
   background: #A12710;
-  width: 100%;
-  height: 6%;
   color: white;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  font-family: 'Righteous', sans-serif;
-}
-aside{
-  width: 30%;
-  height: 100%;
-  -webkit-box-shadow: inset -13px -13px 21px -4px rgba(0,0,0,0.59);
--moz-box-shadow: inset -13px -13px 21px -4px rgba(0,0,0,0.59);
-box-shadow: inset -13px -13px 21px -4px rgba(0,0,0,0.59);
-}
-.bienvenida{
-  width: 100%;
-  height: 80%;
   display: flex;
-}
-.botones{
-  width: 100%;
-  height: 10%;
-}
-.botonVer{
-  margin: 0 auto;
-  width: 10rem;
-  height: 2.5rem;
-  font-size: 1.5rem;
-  border: none;
-  border-radius: 1rem;
-  background: #B22323;
-  color: white;
-}
-.botonVer:hover{
-  background: #FF1919;
-}
-.botonVer:active{
-  background: #E5E32D;
+  align-items: space-around;
+  justify-content: center;
 }
