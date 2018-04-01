@@ -4,7 +4,7 @@
 	padding: 0;
 }
 body{
-	background: #D61300;
+	background: white;
 }
 .container{
 	width: 100%;
@@ -14,7 +14,7 @@ body{
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-around;
-	background: #D61300;
+	background: rgba(255, 132, 0, 0.74);
 	padding: 2%;
 	padding-top: 6%;
 }
@@ -25,9 +25,6 @@ aside, .containereg{
 	background: #fff;
 	border-radius: 1rem;
 	padding: 1%;
-	-webkit-box-shadow: 21px 27px 72px -6px rgba(0,0,0,0.91);
-	-moz-box-shadow: 21px 27px 72px -6px rgba(0,0,0,0.91);
-	box-shadow: 21px 27px 72px -6px rgba(0,0,0,0.91);
 }
 .containereg{
 	height: 100%;

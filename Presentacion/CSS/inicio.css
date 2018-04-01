@@ -6,6 +6,22 @@
   box-sizing: border-box;
   font-family: 'Fira Code','Righteous', sans-serif;
 }
+h2, h3{
+  font-weight: normal;
+}
+.separador{
+  margin: 1% 0;
+  padding: 1% 1%;
+  background-color: rgba(145, 167, 2, 0.727);
+}
+/* ::-webkit-scrollbar{
+  width: 10px;
+  transition: 0.3s;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(118, 206, 30);
+  border-radius: 5px;
+} */
 
 /* Estilos del Header */
 
@@ -15,13 +31,21 @@ header{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1% 5% 1% 5%;
-  background: #ED2500;
+  padding: 0.8vw 8vw 0.8vw 8vw;
+  background: rgba(255, 132, 0, 0.74);
   color: white;
   font-size: 1.01rem;
 }
-.title img{
-  width: 10%;
+.title{
+  height: 80px;
+}
+header a{
+  text-decoration: none;
+  color: black;
+  transition: 0.3s;
+}
+header a:hover{
+  color: white;
 }
 
 /* Estilos Boton Landing Page */
@@ -44,16 +68,23 @@ header{
 
 /* Estilos Contenido Principal Landing Page */
 
-/* .contenido{
-
-} */
+.contenido{
+  width: 90%;
+  margin: auto;
+}
+.contenido article{
+  padding: 2% 0;
+}
+p{
+  text-align: justify;
+}
 
 /* Estilos Footer */
 
 footer{
   width: 100%;
   padding: 1% 5% 1% 5%;
-  background: #A12710;
+  background: rgba(255, 42, 0, 0.809);
   color: white;
   display: flex;
   align-items: space-around;
