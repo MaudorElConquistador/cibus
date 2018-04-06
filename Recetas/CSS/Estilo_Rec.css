@@ -1,20 +1,46 @@
-body{
-	width: 99%;
-	height: 100%;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Fira Code','Righteous', sans-serif;
+	overflow: hidden;
 }
-img{
-	width:4%;
-	height:4%; 
-	background-color: #fff;
-	margin: 1%;
+header img{
+	height: 80px;
+	background-color: none;
+	margin-right: auto;
 }
 header{
 	width: 100%;
-	background-color: #DF0101;
-	flex-direction: row;
+	background-color: #FB8604;
 	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0.8vw 8vw 0.8vw 8vw;
 }
-#Receta{
+/* .menu1{
+	text-decoration: none;
+  	color: black;
+  	transition: 0.3s;
+	font-size: 2rem;
+} */
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 70%;
+}
+.menu{
+	font-size: 1.01rem;
+	text-decoration: none;
+  	color: black;
+  	transition: 0.3s;
+}
+.menu:hover{
+	color: white;
+}
+
+.Receta{
 	margin-top: 1%;
 	margin-bottom: 1%;
 	justify-content:center;
@@ -22,52 +48,27 @@ header{
 	align-content: center;
 	align-items: center;
 }
-#cabeza{
-	width: 85%;
-	height: 95px;
-	display: flex;
-}
-#menu1{
-	 font-family: 'Righteous';
-	 font-size: 180%;
-	 color: white;
-     width: 60%; 
-     height: 100%; 
-     border: 3px solid #C0392B; 
-     background-color: #DF0101;
-}
-#menu{
-	font-family: 'Righteous';
-	font-size: 120%;
-	color: white;
-     width: 60%; 
-     height: 100%; 
-     border: 3px solid #C0392B; 
-     background-color: #DF0101;
-}
-#menu:hover{
-	font-family: 'Righteous';
-	font-size: 180%;
-	text-decoration-color: white;
-	background-color: #DF0101;
-	border: 3px solid #C0392B; 
-    transform: scale(1.1);
-}
 .Principal{
 	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.cont-gen{
+	display: flex;
+	flex-direction: column;
 }
 section{
-	align-content: center;
-	margin-bottom: 80px;
+	width: 90%;
+	margin: auto;
 }
-#Cambio{
+.Cambio{
 	margin-bottom: 5%;
 	flex-direction: row;
 	display: flex;
 	align-content: center;	
 	background-color: #fff;
 }
-#papa{
+.papa{
 	 margin-right: 10%;
      width: 0%; 
      height: 0%; 
@@ -76,7 +77,10 @@ section{
      border-top: 15px solid #fff;
      border-bottom: 15px solid #fff; 
 }
-#papa:hover{
+.ingredientes{
+	list-style-position: inside;
+}
+.papa:hover{
 	 margin-right: 10%;
 	 width: 0%; 
      height: 0%; 
@@ -86,7 +90,7 @@ section{
      border-bottom: 15px solid #fff;
      transform: scale(1.1);	
 }
-#papu{
+.papu{
 	 margin-left: 10%;
      width: 0; 
      height: 0; 
@@ -94,7 +98,7 @@ section{
      border-top: 15px solid #fff;
      border-bottom: 15px solid #fff; 
 }
-#papu:hover{
+.papu:hover{
 	 margin-left: 10%;
      width: 0; 
      height: 0; 
@@ -103,42 +107,34 @@ section{
      border-bottom: 15px solid #fff; 
      transform: scale(1.1);
 }
-aside{
-	font-family: 'Comfortaa', sans-serif;
-	width: 20%;
-	min-width: 140px;
-	padding: 10px;
-	margin-right: 20px;
+.cont-ing{
+	width: 28%;
+	padding: 1%;
 	background: #F2F5A9;
 	border-radius: 1rem;
-	-webkit-box-shadow: 21px 27px 72px -6px rgba(0,0,0,0.91);
-	-moz-box-shadow: 21px 27px 72px -6px rgba(0,0,0,0.91);
-	box-shadow: 21px 27px 72px -6px rgba(0,0,0,0.91);
 }
-#otro{
-	font-family: 'Comfortaa', sans-serif;
+.otro{
 	text-align: justify;
-	width: 80%;
-	padding: 15px;
+	width: 70%;
+	padding: 1%;
 	background: #F2F5A9;
 	border-radius: 1rem;
-	-webkit-box-shadow: 21px 27px 72px -6px rgba(0,0,0,0.91);
-	-moz-box-shadow: 21px 27px 72px -6px rgba(0,0,0,0.91);
-	box-shadow: 21px 27px 72px -6px rgba(0,0,0,0.91);
 }
+
 footer{
-	margin-top: 40px;
-	padding-left:2%; 
-	width: 98%;
-	height: 20%;
-	background-color: #DF0101;
+	margin-top: 2%;
+	width: 100%;
+	padding: 1% 5% 1% 5%;
+	color: #FB8604;
+	background: #343009;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 }
-#Imagen{
-	margin-left: 30%;
-	background-color: #DF0101;
-	margin-bottom:2.5%; 
-	margin-top:2.5%
+footer p{
+	margin-right: auto;
+}
+footer i{
+	margin: 0 10px 0 10px;
+	font-size: 2rem;
 }
