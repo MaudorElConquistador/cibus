@@ -9,7 +9,7 @@ html {
     height: 100%;
 }
 body {
-    background-color: #dedede;
+    background-color: #fbfbfb;
     display: grid;
     grid-template-rows: 15% 75% 10%;
     font-family: verdana, helvetica, sans-serif, arial;
