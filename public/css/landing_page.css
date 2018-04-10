@@ -1,0 +1,22 @@
+main{
+	width: 95%;
+	margin: 0 auto;
+}
+main article {
+    padding: 2% 0;
+}
+main article p {
+    text-align: justify;
+}
+footer {
+    width: 100%;
+    padding: 0.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #880201, #cc0605, #880201);
+}
+footer > p {
+    color: white;
+}
