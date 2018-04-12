@@ -14,7 +14,7 @@ body{
     grid-template-rows: 15% auto 10%;
     font-family: verdana, helvetica, sans-serif, arial;
 }
-header{
+.header{
     width: 100%;
     height: 100%;
     display: grid;
@@ -22,10 +22,22 @@ header{
     justify-content: space-between;
     /*¿Cuál prefieren?*/
     /*background-image: linear-gradient(to left, #880201, #CC0605, #880201);*/
-    background-image: linear-gradient(#AA1302, #CC0605, #AA1302);
+    /* background-image: linear-gradient(#AA1302, #CC0605, #AA1302); */
+    /*cambiarle los colores a esta madrola*/
+    background-image: linear-gradient(to bottom right, #DD4635 10%, #AA1302 70%);
+
+    opacity: 1;
+    transition: all 1s;
 }
-header *{
+.header *{
     color: white;
+}
+header{
+    transition-property: opacity;
+    transition-duration: 1s;
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
 }
 div.logo{
     margin: 0 auto;
@@ -44,6 +56,7 @@ div.current-menu{
     display: grid;
     grid-template-rows: 50% 50%;
     margin: 0.5% 0;
+    background-color: transparent;
 }
 nav{
     display: flex;
@@ -51,7 +64,7 @@ nav{
     align-items: center;
     width: 100%;
 }
-nav > a{
+.menu-option{
     background-color: white;
     width: 80%;
     height: 100%;
@@ -109,6 +122,66 @@ footer > p{
     max-width: 100%;
     max-height: 100%;
 }
+/*header scrolled*/
+
+.header-scrolled{
+    width: 100%;
+}
+.header-scrolled .current-menu{
+    width: 100%;
+    display: flex;
+    background-color: #880201;
+    margin: 0;
+    color: white;
+    transition: margin .5s, background-color 1s;
+}
+.header-scrolled .current-menu nav *{
+    padding: 0.5% 0;
+}
+.header-scrolled .current-menu nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.2% 0;
+}
+.header-scrolled .current-menu .profile{
+    display: flex;
+    visibility: visible;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-scrolled .current-menu .menu-option:hover{
+    box-shadow: 0 0 10px 3px #c91703 inset;
+    border-top-left-radius: 1000px;
+    border-bottom-right-radius: 1000px;
+}
+.header-scrolled .current-menu *{
+    color: white;
+}
+.header-scrolled .current-menu .menu-option{
+    background-color: white;
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    margin: auto 1%;
+    display: table;
+    text-decoration: none;
+    background-color: transparent;
+    transition-property: border-radius, background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.header-scrolled .logo, .header-scrolled .profile, .header-scrolled .current-menu h1{
+    display: none;
+    visibility: hidden;
+}
+.animation-fade-in-down{
+    animation: fade-in-down .5s forwards;
+}
+.animation-fade-in{
+    animation: fade-in 1s;
+}
 .icon-exit, .icon-cog{
     font-family: 'icomoon';
 }
@@ -121,10 +194,38 @@ footer > p{
 .icon-cog:before {
     content: "\e994";
 }
-nav > a:hover{
+.menu-option:hover{
     box-shadow: 0 0 10px 3px #880201 inset;
     border-top-left-radius: 1000px;
     border-bottom-right-radius: 1000px;
+}
+.opactiy-0{
+    opacity: 0;
+}
+.visibility-hidden{
+    visibility: hidden;
+}
+.hidden{
+    display: none;
+    visibility: hidden;
+}
+@keyframes fade-in-down{
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@keyframes fade-in{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 @font-face {
     font-family: 'icomoon';

@@ -1,0 +1,28 @@
+{
+  "name": "cibus",
+  "version": "0.0.0",
+  "description": "Proyecto Escolar",
+  "main": "controller.js",
+  "scripts": {
+    "test": "grunt test.js",
+    "start": "SET PORT=80&&SET NODE_ENV=production&&node controller.js",
+    "nm": "SET PORT=80&&SET NODE_ENV=production&&nodemon controller.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ohtli/cibus.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ohtli/cibus/issues"
+  },
+  "homepage": "https://github.com/Ohtli/cibus#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.0"
+  }
+}

@@ -3,31 +3,35 @@
 	<head>
 		<meta charset="utf-8">
 		<link href="img/logo.ico" rel="shortcut icon">
-		<link rel="stylesheet" type="text/css" href="../css/api.css"/>
-		<link rel="stylesheet" type="text/css" href="../css/landing_page.css"/>
+		<link rel="stylesheet" type="text/css" href="css/api.css"/>
+		<link rel="stylesheet" type="text/css" href="css/landing_page.css"/>
 		<!-- <link rel="stylesheet" type="text/css" href="CSS/inicio.css">
 		<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet"> -->
 		<title>CIBUS</title>
 	</head>
 	<body>
-		<header>
+		<header class="header">
 			<div class="logo"></div>
 			<div class="current-menu">
 				<h1>CIBUS</h1>
 				<nav>
-					<a href="">
+					<a href="" class="menu-option">
 						<p>¿Qué es Cibus?</p>
 					</a>
-					<a href="">
+					<a href="" class="menu-option">
 						<p>¿Quienes somos?</p>
 					</a>
-					<a href="">
+					<a href="" class="menu-option">
 						<p>Registro</p>
 					</a>
-					<a href="">
+					<a href="" class="menu-option">
 						<p>Iniciar Sesión</p>
 					</a>
+					<div class="profile hidden">
+						<span class="icon-exit" title="Cerrar sesión"></span>
+						<span class="icon-cog" title="Configuración"></span>
+					</div>
 				</nav>
 			</div>
 			<div class="profile">
@@ -101,6 +105,8 @@
 				<a href="ashudhosaidhoai">
 					<img src="../img/twitter.png" title="Cibus en Twitter" alt="Cibus-Twitter" />
 				</a>
+			</div>
 		</footer>
+		<script src="/js/api.js" charset="utf-8"></script>
 	</body>
 </html>
