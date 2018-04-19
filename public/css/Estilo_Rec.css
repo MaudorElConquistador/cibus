@@ -1,0 +1,69 @@
+
+aside.cont-ing{
+	font-family: 'Comfortaa', sans-serif;
+	width: 25%;
+	min-width: 140px;
+	padding: 25px;
+	text-align: justify;
+	margin-right: 20px;
+	background: rgb(249, 231, 159);
+	border-radius: 1rem;
+}
+main{
+
+}
+.Principal{
+	display: flex;
+}
+.Cambio{
+	margin-top: 1%;
+	align-self: center;
+	margin-bottom: 5%;
+	flex-direction: row;
+	display: flex;
+	align-content: center;	
+}
+.papa{
+	 margin-right: 10%;
+     width: 0%; 
+     height: 0%; 
+     border-top: 0px;
+     border-right: 30px solid rgba(245, 176, 65, .5);
+     border-top: 15px solid #CDCDCD;
+     border-bottom: 15px solid #CDCDCD; 
+}
+.papa:hover{
+	 margin-right: 10%;
+	 width: 0%; 
+     height: 0%; 
+     border-top: 0px;
+     border-right: 30px solid rgb(245, 176, 65);
+     border-top: 15px solid #CDCDCD;
+     border-bottom: 15px solid #CDCDCD;
+     transform: scale(1.5);	
+}
+.papu{
+	 margin-left: 10%;
+     width: 0; 
+     height: 0; 
+     border-left: 30px solid rgba(245, 176, 65, .5);
+     border-top: 15px solid #CDCDCD;
+     border-bottom: 15px solid #CDCDCD; 
+}
+.papu:hover{
+	 margin-left: 10%;
+     width: 0; 
+     height: 0; 
+     border-left: 30px solid rgb(245, 176, 65);
+     border-top: 15px solid #CDCDCD;
+     border-bottom: 15px solid #CDCDCD; 
+     transform: scale(1.5);
+}
+.Procedimiento{
+	font-family: 'Comfortaa', sans-serif;
+	text-align: justify;
+	width: 80%;
+	padding: 15px;
+	background: rgb(249, 231, 159);
+	border-radius: 1rem;
+}
