@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-	<link rel="stylesheet" type="text/css" href="css/api.css" />
+        <link rel="stylesheet" href="/css/register.css" />
+        <link rel="stylesheet" href="/css/api.css" />
         <meta charset="utf-8">
         <title><%= title %></title>
     </head>
     <body>
-        <header>
-            <h1><%= h1 %></h1>
-        </header>
+    <header class="header">
+        <div class="logo"></div>
+        <div class="current-menu">
+            <h1>CIBUS</h1>
+            <nav>
+                <a href="landing_page.html" class="menu-option">
+                    <p>¿Qué es Cibus?</p>
+                </a>
+                <a href="about_us.html  " class="menu-option">
+                    <p>¿Quienes somos?</p>
+                </a>
+                <a href="register.html" class="menu-option">
+                    <p>Registro</p>
+                </a>
+                <a href="login.html" class="menu-option">
+                    <p>Iniciar Sesión</p>
+                </a>
+            </nav>
+        </div>
+    </header>
+        
         <main>
             <article>
                 <%= description %>
             </article>
         </main>
         <footer>
-
+            <p>&#169; Copyright 2018 Healthynnovation</p>
+            <div class="contact-us">
+                <a href="mariosadho">
+                    <img src="../img/fb.png" title="Cibus en Facebook" alt="Cibus-Facebook" />
+                </a>
+                <a href="ashudhosaidhoai">
+                    <img src="../img/twitter.png" title="Cibus en Twitter" alt="Cibus-Twitter" />
+                </a>
+            </div>
         </footer>
     </body>
 </html>
